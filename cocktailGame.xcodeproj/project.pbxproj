@@ -18,6 +18,7 @@
 		8694998C28AA006A00319923 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694998B28AA006A00319923 /* MainViewController.swift */; };
 		8694999328AA02D600319923 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694999228AA02D600319923 /* MainPresenter.swift */; };
 		8694999528AA61B900319923 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8694999428AA61B900319923 /* README.md */; };
+		8694999928AAAAD700319923 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694999828AAAAD700319923 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		8694998B28AA006A00319923 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8694999228AA02D600319923 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		8694999428AA61B900319923 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8694999828AAAAD700319923 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				8694997128A9FBBA00319923 /* SceneDelegate.swift */,
 				8694998728A9FD7000319923 /* AssemblyModuleBuilder.swift */,
 				8694998928A9FD8200319923 /* Router.swift */,
+				8694999828AAAAD700319923 /* TabBarViewController.swift */,
 				8694998D28AA007D00319923 /* MainModule */,
 				8694998E28AA008E00319923 /* GameModule */,
 				8694997B28A9FBBD00319923 /* Assets.xcassets */,
@@ -197,6 +200,7 @@
 				8694998828A9FD7000319923 /* AssemblyModuleBuilder.swift in Sources */,
 				8694997A28A9FBBA00319923 /* cocktailGame.xcdatamodeld in Sources */,
 				8694999328AA02D600319923 /* MainPresenter.swift in Sources */,
+				8694999928AAAAD700319923 /* TabBarViewController.swift in Sources */,
 				8694997028A9FBBA00319923 /* AppDelegate.swift in Sources */,
 				8694998A28A9FD8200319923 /* Router.swift in Sources */,
 				8694997228A9FBBA00319923 /* SceneDelegate.swift in Sources */,
