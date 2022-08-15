@@ -17,6 +17,7 @@
 		8694998A28A9FD8200319923 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694998928A9FD8200319923 /* Router.swift */; };
 		8694998C28AA006A00319923 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694998B28AA006A00319923 /* MainViewController.swift */; };
 		8694999328AA02D600319923 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694999228AA02D600319923 /* MainPresenter.swift */; };
+		8694999528AA61B900319923 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8694999428AA61B900319923 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8694998928A9FD8200319923 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		8694998B28AA006A00319923 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8694999228AA02D600319923 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		8694999428AA61B900319923 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		8694996328A9FBBA00319923 = {
 			isa = PBXGroup;
 			children = (
+				8694999428AA61B900319923 /* README.md */,
 				8694996E28A9FBBA00319923 /* cocktailGame */,
 				8694996D28A9FBBA00319923 /* Products */,
 			);
@@ -177,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8694999528AA61B900319923 /* README.md in Resources */,
 				8694997F28A9FBBD00319923 /* LaunchScreen.storyboard in Resources */,
 				8694997C28A9FBBD00319923 /* Assets.xcassets in Resources */,
 			);
