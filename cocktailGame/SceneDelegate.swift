@@ -18,11 +18,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let navigationController = UINavigationController()
-        let assemblyModuleBuilder = AssemblyModuleBuilder()
-        let router = Router(navigationController: navigationController, assemblyModuleBuilder: assemblyModuleBuilder)
-        router.initialViewController()
-        window?.rootViewController = navigationController
+        
+        let peopleNavigationController = UINavigationController()
+        let cocktailsNavigationController = UINavigationController()
+        
+        let assemblyBuilder = ModuleBuilder()
+        
+        let peopleRouter = Router(navigationController: peopleNavigationController, moduleBuilder: assemblyBuilder)
+        peopleRouter.initialPeopleVC()
+        let cocktailRouter = Router(navigationController: cocktailsNavigationController, moduleBuilder: assemblyBuilder)
+        cocktailRouter.initialCocktailVC()
+        
+        let tabs = [peopleNavigationController, cocktailsNavigationController]
+        let tabBar = TabBarViewController(viewControllers: tabs)
+        tabBar.selectedIndex = 0
+        window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
     }
 

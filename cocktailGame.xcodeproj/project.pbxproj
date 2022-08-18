@@ -9,31 +9,39 @@
 /* Begin PBXBuildFile section */
 		8694997028A9FBBA00319923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694996F28A9FBBA00319923 /* AppDelegate.swift */; };
 		8694997228A9FBBA00319923 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694997128A9FBBA00319923 /* SceneDelegate.swift */; };
-		8694997428A9FBBA00319923 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694997328A9FBBA00319923 /* ViewController.swift */; };
 		8694997A28A9FBBA00319923 /* cocktailGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8694997828A9FBBA00319923 /* cocktailGame.xcdatamodeld */; };
 		8694997C28A9FBBD00319923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8694997B28A9FBBD00319923 /* Assets.xcassets */; };
 		8694997F28A9FBBD00319923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8694997D28A9FBBD00319923 /* LaunchScreen.storyboard */; };
-		8694998828A9FD7000319923 /* AssemblyModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694998728A9FD7000319923 /* AssemblyModuleBuilder.swift */; };
 		8694998A28A9FD8200319923 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694998928A9FD8200319923 /* Router.swift */; };
-		8694998C28AA006A00319923 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694998B28AA006A00319923 /* MainViewController.swift */; };
-		8694999328AA02D600319923 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694999228AA02D600319923 /* MainPresenter.swift */; };
+		8694998C28AA006A00319923 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694998B28AA006A00319923 /* PeopleViewController.swift */; };
+		8694999328AA02D600319923 /* PeopleViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694999228AA02D600319923 /* PeopleViewPresenter.swift */; };
 		8694999528AA61B900319923 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8694999428AA61B900319923 /* README.md */; };
+		8694999928AAAAD700319923 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694999828AAAAD700319923 /* TabBarViewController.swift */; };
+		8694999B28ABC09D00319923 /* CocktailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694999A28ABC09D00319923 /* CocktailViewController.swift */; };
+		869499A028AE83FE00319923 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694999F28AE83FE00319923 /* GameViewController.swift */; };
+		869499A228AE8E0D00319923 /* GameViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869499A128AE8E0D00319923 /* GameViewPresenter.swift */; };
+		869499A428AEE3A500319923 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869499A328AEE3A500319923 /* ModuleBuilder.swift */; };
+		869499A628AEE9B400319923 /* CocktailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869499A528AEE9B400319923 /* CocktailViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8694996C28A9FBBA00319923 /* cocktailGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cocktailGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8694996F28A9FBBA00319923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8694997128A9FBBA00319923 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8694997328A9FBBA00319923 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8694997928A9FBBA00319923 /* cocktailGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cocktailGame.xcdatamodel; sourceTree = "<group>"; };
 		8694997B28A9FBBD00319923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8694997E28A9FBBD00319923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8694998028A9FBBD00319923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8694998728A9FD7000319923 /* AssemblyModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyModuleBuilder.swift; sourceTree = "<group>"; };
 		8694998928A9FD8200319923 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		8694998B28AA006A00319923 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		8694999228AA02D600319923 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		8694998B28AA006A00319923 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		8694999228AA02D600319923 /* PeopleViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewPresenter.swift; sourceTree = "<group>"; };
 		8694999428AA61B900319923 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8694999828AAAAD700319923 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		8694999A28ABC09D00319923 /* CocktailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailViewController.swift; sourceTree = "<group>"; };
+		8694999F28AE83FE00319923 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		869499A128AE8E0D00319923 /* GameViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewPresenter.swift; sourceTree = "<group>"; };
+		869499A328AEE3A500319923 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		869499A528AEE9B400319923 /* CocktailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +77,11 @@
 			children = (
 				8694996F28A9FBBA00319923 /* AppDelegate.swift */,
 				8694997128A9FBBA00319923 /* SceneDelegate.swift */,
-				8694998728A9FD7000319923 /* AssemblyModuleBuilder.swift */,
 				8694998928A9FD8200319923 /* Router.swift */,
-				8694998D28AA007D00319923 /* MainModule */,
-				8694998E28AA008E00319923 /* GameModule */,
+				869499A328AEE3A500319923 /* ModuleBuilder.swift */,
+				8694999828AAAAD700319923 /* TabBarViewController.swift */,
+				8694998D28AA007D00319923 /* PeopleModule */,
+				8694999C28AE83A900319923 /* CocktailModule */,
 				8694997B28A9FBBD00319923 /* Assets.xcassets */,
 				8694997D28A9FBBD00319923 /* LaunchScreen.storyboard */,
 				8694998028A9FBBD00319923 /* Info.plist */,
@@ -81,35 +90,20 @@
 			path = cocktailGame;
 			sourceTree = "<group>";
 		};
-		8694998D28AA007D00319923 /* MainModule */ = {
+		8694998D28AA007D00319923 /* PeopleModule */ = {
 			isa = PBXGroup;
 			children = (
 				8694998F28AA00B600319923 /* View */,
 				8694999128AA02BD00319923 /* Presenter */,
 			);
-			path = MainModule;
-			sourceTree = "<group>";
-		};
-		8694998E28AA008E00319923 /* GameModule */ = {
-			isa = PBXGroup;
-			children = (
-				8694999028AA00BD00319923 /* View */,
-			);
-			path = GameModule;
+			path = PeopleModule;
 			sourceTree = "<group>";
 		};
 		8694998F28AA00B600319923 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8694998B28AA006A00319923 /* MainViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8694999028AA00BD00319923 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8694997328A9FBBA00319923 /* ViewController.swift */,
+				8694998B28AA006A00319923 /* PeopleViewController.swift */,
+				8694999F28AE83FE00319923 /* GameViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,7 +111,33 @@
 		8694999128AA02BD00319923 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				8694999228AA02D600319923 /* MainPresenter.swift */,
+				8694999228AA02D600319923 /* PeopleViewPresenter.swift */,
+				869499A128AE8E0D00319923 /* GameViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8694999C28AE83A900319923 /* CocktailModule */ = {
+			isa = PBXGroup;
+			children = (
+				8694999D28AE83D200319923 /* View */,
+				8694999E28AE83DA00319923 /* Presenter */,
+			);
+			path = CocktailModule;
+			sourceTree = "<group>";
+		};
+		8694999D28AE83D200319923 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8694999A28ABC09D00319923 /* CocktailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8694999E28AE83DA00319923 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				869499A528AEE9B400319923 /* CocktailViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -193,14 +213,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8694997428A9FBBA00319923 /* ViewController.swift in Sources */,
-				8694998828A9FD7000319923 /* AssemblyModuleBuilder.swift in Sources */,
 				8694997A28A9FBBA00319923 /* cocktailGame.xcdatamodeld in Sources */,
-				8694999328AA02D600319923 /* MainPresenter.swift in Sources */,
+				8694999328AA02D600319923 /* PeopleViewPresenter.swift in Sources */,
+				8694999928AAAAD700319923 /* TabBarViewController.swift in Sources */,
+				869499A628AEE9B400319923 /* CocktailViewPresenter.swift in Sources */,
+				869499A228AE8E0D00319923 /* GameViewPresenter.swift in Sources */,
+				869499A428AEE3A500319923 /* ModuleBuilder.swift in Sources */,
 				8694997028A9FBBA00319923 /* AppDelegate.swift in Sources */,
+				869499A028AE83FE00319923 /* GameViewController.swift in Sources */,
 				8694998A28A9FD8200319923 /* Router.swift in Sources */,
 				8694997228A9FBBA00319923 /* SceneDelegate.swift in Sources */,
-				8694998C28AA006A00319923 /* MainViewController.swift in Sources */,
+				8694999B28ABC09D00319923 /* CocktailViewController.swift in Sources */,
+				8694998C28AA006A00319923 /* PeopleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

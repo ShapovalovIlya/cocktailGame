@@ -9,30 +9,41 @@ import UIKit
 
 protocol RouterMain {
     var navigationController: UINavigationController? { get set }
-    var assemblyModuleBuilder: AssemblyModuleBuilder? { get set }
+    var moduleBuilder: ModuleBuilderProtocol? { get set }
 }
 
-protocol RouterProtocol: RouterMain {
-    func initialViewController()
+protocol PeopleRouterProtocol {
+    
 }
+
+protocol CocktailRouterProtocol {
+    
+}
+
+typealias RouterProtocol = RouterMain & PeopleRouterProtocol & CocktailRouterProtocol
 
 final class Router: RouterProtocol {
     
     var navigationController: UINavigationController?
-    var assemblyModuleBuilder: AssemblyModuleBuilder?
+    var moduleBuilder: ModuleBuilderProtocol?
     
-    init(navigationController: UINavigationController, assemblyModuleBuilder: AssemblyModuleBuilder) {
+    init(navigationController: UINavigationController, moduleBuilder: ModuleBuilderProtocol) {
         self.navigationController = navigationController
-        self.assemblyModuleBuilder = assemblyModuleBuilder
+        self.moduleBuilder = moduleBuilder
     }
     
-    func initialViewController() {
+    func initialPeopleVC() {
         guard let navigationController = navigationController else { return }
-        guard let mainViewController = assemblyModuleBuilder?.createMainScreen(router: self) else { return }
+        guard let mainViewController = moduleBuilder?.createPeopleMainVC(router: self) else { return }
         navigationController.viewControllers = [mainViewController]
+        navigationController.tabBarItem = TabBarItems.people.item
     }
     
-    
-    
+    func initialCocktailVC() {
+        guard let navigationController = navigationController else { return }
+        guard let mainViewController = moduleBuilder?.createCocktailMainVC(router: self) else { return }
+        navigationController.viewControllers = [mainViewController]
+        navigationController.tabBarItem = TabBarItems.cocktails.item
+    }
     
 }

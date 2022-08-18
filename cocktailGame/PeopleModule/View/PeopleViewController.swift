@@ -7,9 +7,9 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class PeopleViewController: UIViewController {
     
-    var presenter: MainViewPresenterProtocol!
+    var presenter: PeopleViewPresenterProtocol!
     
     private let tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
 }
 
 //MARK: - Table View Data Source
-extension MainViewController: UITableViewDataSource {
+extension PeopleViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         presenter.getNumberOfRows() ?? 0
@@ -48,16 +48,18 @@ extension MainViewController: UITableViewDataSource {
 }
 
 //MARK: - Table View Delegate
-extension MainViewController: UITableViewDelegate {
-    
+extension PeopleViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
 
-extension MainViewController: MainViewProtocol {
+extension PeopleViewController: PeopleViewProtocol {
     
 }
 
 //MARK: - private extension
-private extension MainViewController {
+private extension PeopleViewController {
     func setupView() {
         view.backgroundColor = .white
         view.addSubview(tableView)
