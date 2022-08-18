@@ -7,39 +7,61 @@
 
 import UIKit
 
-final class TabBarViewController: UITabBarController {
+enum TabBarItems {
+   case people
+   case cocktails
+    
+    var index: Int {
+        switch self {
+        case .people:
+            return 0
+        case .cocktails:
+            return 1
+        }
+    }
+    
+    var item: UITabBarItem {
+        switch self {
+        case .people:
+            return UITabBarItem(title: "People", image: UIImage(systemName: "person.3.fill"), tag: index)
+        case .cocktails:
+            return UITabBarItem(title: "Cocktails", image: UIImage(systemName: "list.star"), tag: index)
+        }
+    }
+   
+}
 
-    private enum TabBarItems {
-        case people
-        case cocktails
-        
-        var title: String {
-            switch self {
-            case .people:
-                return "People"
-            case .cocktails:
-                return "Cocktails"
-            }
-        }
-        
-        var icon: String {
-            switch self {
-            case .people:
-                return "person.3.fill"
-            case .cocktails:
-                return "list.star"
-            }
-        }
+final class TabBarViewController: UITabBarController {
+    
+    required init(viewControllers: [UIViewController]) {
+        super.init(nibName: nil, bundle: nil)
+        self.viewControllers = viewControllers
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupTabBar()
     }
 
 }
 
+//MARK: - private extension
 private extension TabBarViewController {
     
+    func setupTabBar() {
+        tabBar.backgroundColor = .white
+        tabBar.unselectedItemTintColor = .black
+        tabBar.tintColor = .black
+        
+        UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor : UIColor.black], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor : UIColor.black], for: .selected)
+    }
+    
 }
+
+

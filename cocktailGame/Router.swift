@@ -7,32 +7,37 @@
 
 import UIKit
 
-protocol RouterMain {
-    var navigationController: UINavigationController? { get set }
-    var assemblyModuleBuilder: AssemblyModuleBuilder? { get set }
-}
-
-protocol RouterProtocol: RouterMain {
-    func initialViewController()
+protocol RouterProtocol {
+    func createPeopleMainScreen() -> UIViewController
+    func createCocktailMainScreen() -> UIViewController
+    func showGameScreen()
 }
 
 final class Router: RouterProtocol {
     
-    var navigationController: UINavigationController?
-    var assemblyModuleBuilder: AssemblyModuleBuilder?
-    
-    init(navigationController: UINavigationController, assemblyModuleBuilder: AssemblyModuleBuilder) {
-        self.navigationController = navigationController
-        self.assemblyModuleBuilder = assemblyModuleBuilder
+    func createPeopleMainScreen() -> UIViewController {
+        let view = PeopleViewController()
+        let presenter = PeopleViewPresenter(view: view, router: self)
+        view.presenter = presenter
+        let navigationController = UINavigationController(rootViewController: view)
+        navigationController.tabBarItem = TabBarItems.people.item
+        return navigationController
     }
     
-    func initialViewController() {
-        guard let navigationController = navigationController else { return }
-        guard let mainViewController = assemblyModuleBuilder?.createMainScreen(router: self) else { return }
-        navigationController.viewControllers = [mainViewController]
+    func showGameScreen() {
+        let view = GameViewController()
+        let presenter = GameViewPresenter(view: view, router: self)
+        view.presenter = presenter
+        let navigationController = UINavigationController()
+        navigationController.pushViewController(view, animated: true)
     }
     
     
-    
+    func createCocktailMainScreen() -> UIViewController {
+        let view = CocktailViewController()
+        let navigationController = UINavigationController(rootViewController: view)
+        navigationController.tabBarItem = TabBarItems.cocktails.item
+        return navigationController
+    }
     
 }
