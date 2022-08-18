@@ -22,6 +22,7 @@
 		869499A228AE8E0D00319923 /* GameViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869499A128AE8E0D00319923 /* GameViewPresenter.swift */; };
 		869499A428AEE3A500319923 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869499A328AEE3A500319923 /* ModuleBuilder.swift */; };
 		869499A628AEE9B400319923 /* CocktailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869499A528AEE9B400319923 /* CocktailViewPresenter.swift */; };
+		869499A828AEF58200319923 /* CreatePersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869499A728AEF58200319923 /* CreatePersonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		869499A128AE8E0D00319923 /* GameViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewPresenter.swift; sourceTree = "<group>"; };
 		869499A328AEE3A500319923 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		869499A528AEE9B400319923 /* CocktailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailViewPresenter.swift; sourceTree = "<group>"; };
+		869499A728AEF58200319923 /* CreatePersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				8694998B28AA006A00319923 /* PeopleViewController.swift */,
 				8694999F28AE83FE00319923 /* GameViewController.swift */,
+				869499A728AEF58200319923 /* CreatePersonViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8694997A28A9FBBA00319923 /* cocktailGame.xcdatamodeld in Sources */,
+				869499A828AEF58200319923 /* CreatePersonViewController.swift in Sources */,
 				8694999328AA02D600319923 /* PeopleViewPresenter.swift in Sources */,
 				8694999928AAAAD700319923 /* TabBarViewController.swift in Sources */,
 				869499A628AEE9B400319923 /* CocktailViewPresenter.swift in Sources */,

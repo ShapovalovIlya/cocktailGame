@@ -9,7 +9,7 @@ import UIKit
 
 final class CocktailViewController: UIViewController {
     
-    var presenter: CocktailViewPresenterProtocol!
+    var presenter: CocktailViewPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()

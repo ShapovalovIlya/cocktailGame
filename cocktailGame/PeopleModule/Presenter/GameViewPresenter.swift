@@ -12,15 +12,15 @@ protocol GameViewProtocol: AnyObject {
 }
 
 protocol GameViewPresenterProtocol {
-    init(view: GameViewProtocol, router: RouterProtocol)
+    init(view: GameViewProtocol, router: PeopleRouterProtocol)
 }
 
 final class GameViewPresenter: GameViewPresenterProtocol {
     
     weak var view: GameViewProtocol?
-    var router: RouterProtocol?
+    var router: PeopleRouterProtocol?
     
-    init(view: GameViewProtocol, router: RouterProtocol) {
+    init(view: GameViewProtocol, router: PeopleRouterProtocol) {
         self.view = view
         self.router = router
     }

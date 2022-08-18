@@ -13,7 +13,7 @@ protocol RouterMain {
 }
 
 protocol PeopleRouterProtocol {
-    
+    func showGameVC()
 }
 
 protocol CocktailRouterProtocol {
@@ -33,17 +33,32 @@ final class Router: RouterProtocol {
     }
     
     func initialPeopleVC() {
-        guard let navigationController = navigationController else { return }
-        guard let mainViewController = moduleBuilder?.createPeopleMainVC(router: self) else { return }
+        guard
+            let navigationController = navigationController,
+            let mainViewController = moduleBuilder?.createPeopleMainVC(router: self)
+        else
+        { return }
         navigationController.viewControllers = [mainViewController]
         navigationController.tabBarItem = TabBarItems.people.item
     }
     
     func initialCocktailVC() {
-        guard let navigationController = navigationController else { return }
-        guard let mainViewController = moduleBuilder?.createCocktailMainVC(router: self) else { return }
+        guard
+            let navigationController = navigationController,
+            let mainViewController = moduleBuilder?.createCocktailMainVC(router: self)
+        else
+        { return }
         navigationController.viewControllers = [mainViewController]
         navigationController.tabBarItem = TabBarItems.cocktails.item
+    }
+    
+    func showGameVC() {
+        guard
+            let navigationController = navigationController,
+            let gameViewController = moduleBuilder?.createGameVC(router: self)
+        else
+        { return }
+        navigationController.pushViewController(gameViewController, animated: true)
     }
     
 }

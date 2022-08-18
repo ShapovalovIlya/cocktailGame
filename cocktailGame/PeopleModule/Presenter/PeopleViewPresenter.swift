@@ -14,6 +14,7 @@ protocol PeopleViewProtocol: AnyObject {
 protocol PeopleViewPresenterProtocol: AnyObject {
     init(view: PeopleViewProtocol, router: PeopleRouterProtocol)
     func getNumberOfRows() -> Int?
+    func tapOnPerson()
 }
 
 final class PeopleViewPresenter: PeopleViewPresenterProtocol {
@@ -29,6 +30,14 @@ final class PeopleViewPresenter: PeopleViewPresenterProtocol {
     
     func getNumberOfRows() -> Int? {
         5
+    }
+    
+    func tapOnPerson() {
+        router?.showGameVC()
+    }
+    
+    func addPerson() {
+        
     }
     
 }

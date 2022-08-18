@@ -9,7 +9,7 @@ import UIKit
 
 final class PeopleViewController: UIViewController {
     
-    var presenter: PeopleViewPresenterProtocol!
+    var presenter: PeopleViewPresenterProtocol?
     
     private let tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
@@ -37,7 +37,7 @@ final class PeopleViewController: UIViewController {
 extension PeopleViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        presenter.getNumberOfRows() ?? 0
+        presenter?.getNumberOfRows() ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,7 +50,8 @@ extension PeopleViewController: UITableViewDataSource {
 //MARK: - Table View Delegate
 extension PeopleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        presenter?.tapOnPerson()
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
