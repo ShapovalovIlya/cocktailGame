@@ -20,6 +20,8 @@
 		8694999B28ABC09D00319923 /* CocktailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694999A28ABC09D00319923 /* CocktailViewController.swift */; };
 		869499A028AE83FE00319923 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694999F28AE83FE00319923 /* GameViewController.swift */; };
 		869499A228AE8E0D00319923 /* GameViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869499A128AE8E0D00319923 /* GameViewPresenter.swift */; };
+		869499A428AEE3A500319923 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869499A328AEE3A500319923 /* ModuleBuilder.swift */; };
+		869499A628AEE9B400319923 /* CocktailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869499A528AEE9B400319923 /* CocktailViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		8694999A28ABC09D00319923 /* CocktailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailViewController.swift; sourceTree = "<group>"; };
 		8694999F28AE83FE00319923 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		869499A128AE8E0D00319923 /* GameViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewPresenter.swift; sourceTree = "<group>"; };
+		869499A328AEE3A500319923 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		869499A528AEE9B400319923 /* CocktailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 				8694996F28A9FBBA00319923 /* AppDelegate.swift */,
 				8694997128A9FBBA00319923 /* SceneDelegate.swift */,
 				8694998928A9FD8200319923 /* Router.swift */,
+				869499A328AEE3A500319923 /* ModuleBuilder.swift */,
 				8694999828AAAAD700319923 /* TabBarViewController.swift */,
 				8694998D28AA007D00319923 /* PeopleModule */,
 				8694999C28AE83A900319923 /* CocktailModule */,
@@ -132,6 +137,7 @@
 		8694999E28AE83DA00319923 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				869499A528AEE9B400319923 /* CocktailViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -210,7 +216,9 @@
 				8694997A28A9FBBA00319923 /* cocktailGame.xcdatamodeld in Sources */,
 				8694999328AA02D600319923 /* PeopleViewPresenter.swift in Sources */,
 				8694999928AAAAD700319923 /* TabBarViewController.swift in Sources */,
+				869499A628AEE9B400319923 /* CocktailViewPresenter.swift in Sources */,
 				869499A228AE8E0D00319923 /* GameViewPresenter.swift in Sources */,
+				869499A428AEE3A500319923 /* ModuleBuilder.swift in Sources */,
 				8694997028A9FBBA00319923 /* AppDelegate.swift in Sources */,
 				869499A028AE83FE00319923 /* GameViewController.swift in Sources */,
 				8694998A28A9FD8200319923 /* Router.swift in Sources */,

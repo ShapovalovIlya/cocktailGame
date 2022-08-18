@@ -9,9 +9,15 @@ import UIKit
 
 final class CocktailViewController: UIViewController {
     
+    var presenter: CocktailViewPresenterProtocol!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .blue
     }
+}
+
+extension CocktailViewController: CocktailViewProtocol {
+    
 }

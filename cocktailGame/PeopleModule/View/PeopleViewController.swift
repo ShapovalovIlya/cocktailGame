@@ -50,7 +50,7 @@ extension PeopleViewController: UITableViewDataSource {
 //MARK: - Table View Delegate
 extension PeopleViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter.tapOnPerson()
+        
     }
 }
 

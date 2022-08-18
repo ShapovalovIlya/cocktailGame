@@ -7,37 +7,43 @@
 
 import UIKit
 
-protocol RouterProtocol {
-    func createPeopleMainScreen() -> UIViewController
-    func createCocktailMainScreen() -> UIViewController
-    func showGameScreen()
+protocol RouterMain {
+    var navigationController: UINavigationController? { get set }
+    var moduleBuilder: ModuleBuilderProtocol? { get set }
 }
+
+protocol PeopleRouterProtocol {
+    
+}
+
+protocol CocktailRouterProtocol {
+    
+}
+
+typealias RouterProtocol = RouterMain & PeopleRouterProtocol & CocktailRouterProtocol
 
 final class Router: RouterProtocol {
     
-    func createPeopleMainScreen() -> UIViewController {
-        let view = PeopleViewController()
-        let presenter = PeopleViewPresenter(view: view, router: self)
-        view.presenter = presenter
-        let navigationController = UINavigationController(rootViewController: view)
+    var navigationController: UINavigationController?
+    var moduleBuilder: ModuleBuilderProtocol?
+    
+    init(navigationController: UINavigationController, moduleBuilder: ModuleBuilderProtocol) {
+        self.navigationController = navigationController
+        self.moduleBuilder = moduleBuilder
+    }
+    
+    func initialPeopleVC() {
+        guard let navigationController = navigationController else { return }
+        guard let mainViewController = moduleBuilder?.createPeopleMainVC(router: self) else { return }
+        navigationController.viewControllers = [mainViewController]
         navigationController.tabBarItem = TabBarItems.people.item
-        return navigationController
     }
     
-    func showGameScreen() {
-        let view = GameViewController()
-        let presenter = GameViewPresenter(view: view, router: self)
-        view.presenter = presenter
-        let navigationController = UINavigationController()
-        navigationController.pushViewController(view, animated: true)
-    }
-    
-    
-    func createCocktailMainScreen() -> UIViewController {
-        let view = CocktailViewController()
-        let navigationController = UINavigationController(rootViewController: view)
+    func initialCocktailVC() {
+        guard let navigationController = navigationController else { return }
+        guard let mainViewController = moduleBuilder?.createCocktailMainVC(router: self) else { return }
+        navigationController.viewControllers = [mainViewController]
         navigationController.tabBarItem = TabBarItems.cocktails.item
-        return navigationController
     }
     
 }

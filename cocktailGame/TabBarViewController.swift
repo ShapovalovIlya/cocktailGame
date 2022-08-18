@@ -55,11 +55,8 @@ private extension TabBarViewController {
     
     func setupTabBar() {
         tabBar.backgroundColor = .white
-        tabBar.unselectedItemTintColor = .black
+        tabBar.unselectedItemTintColor = .lightGray
         tabBar.tintColor = .black
-        
-        UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor : UIColor.black], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor : UIColor.black], for: .selected)
     }
     
 }
